@@ -234,18 +234,19 @@ class _InicioState extends State<Inicio> {
                 elevation: 1,
                 margin: const EdgeInsets.only(bottom: 12),
                 child: ListTile(
-                  leading: Text(
-                    carro[0],
-                    style: const TextStyle(fontSize: 32),
+                  leading: const Icon(
+                    Icons.directions_car,
+                    size: 32,
+                    color: Color(0xFF1E3A8A),
                   ),
                   title: Text(
-                    carro[1],
+                    carro[0],
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   subtitle: Text(
-                    '${carro[2]} • ${carro[3]}',
+                    '${carro[1]} • ${carro[2]}',
                   ),
                   trailing: const Icon(
                     Icons.favorite_border,
